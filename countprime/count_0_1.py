@@ -14,6 +14,7 @@ class prime_count():
         is_one = 0
         
         for val in p_dict.values():
+            is_one = 0
             for num in val:
                 if int(num) == 0 and is_one == 1:
                     zero_counter += 1

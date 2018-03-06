@@ -11,15 +11,18 @@ class prime_count():
     def count_01(self, p_dict):
         zero_counter = 0
         one_counter = 0
-
+        is_one = 0
+        
         for val in p_dict.values():
             for num in val:
-                if int(num) == 0:
+                if int(num) == 0 and is_one == 1:
                     zero_counter += 1
 
                 else:
+                    is_one = 1
                     one_counter += 1
 
+        one_counter = one_counter - len(p_dict)
         return [zero_counter, one_counter]
 
 

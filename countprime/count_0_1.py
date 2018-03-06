@@ -26,4 +26,5 @@ class prime_count():
 if __name__ == "__main__":
     prime = prime_count()
     d = prime.prime_dict
-    print(prime.count_01(d))
+    res = prime.count_01(d)
+    print("0 ... " + str(res[0]) + "\t 1 ... " + str(res[1]))
